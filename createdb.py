@@ -4,6 +4,8 @@ from sqlalchemy import Integer, String, Date, Float
 import os
 import datetime
 
+#https://www.blog.pythonlibrary.org/2010/02/03/another-step-by-step-sqlalchemy-tutorial-part-1-of-2/
+
 basedir = os.path.abspath(os.path.dirname(__file__))
 
 engine = create_engine('sqlite:///'+os.path.join(basedir,"currfxdb.db"),echo=True)
